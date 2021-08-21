@@ -46,6 +46,11 @@ ul {
   background-color: #2f303a;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ----------------- HEADER ----------- */
 
 /* .header {
@@ -115,6 +120,14 @@ ul {
   margin-right: 50px;
 }
 
+/* ----------HERO---------------- */
+.container-hero {
+  width: 1200px;
+  flex-grow: 1;
+  padding: 200px 0px 280px 452px;
+  justify-content: center;
+}
+
 .header-btn {
   font-weight: bold;
   font-size: 16px;
@@ -125,9 +138,8 @@ ul {
   letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
+  border-radius: 4px;
 }
-/* ----------HERO---------------- */
-
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -136,6 +148,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-title-colot);
+  margin-bottom: 30px;
 }
 /* ----------ABOUT--------------- */
 .about-title-text {
@@ -145,6 +158,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 .about-text {
   font-weight: normal;
@@ -154,6 +168,13 @@ ul {
   color: var(--main-text-color);
 }
 
+.about-item {
+  margin-right: 30px;
+}
+
+.about-list {
+  display: flex;
+}
 /* ----------GALLERY------------ */
 .gallery-title,
 .teem-title {
@@ -163,6 +184,15 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 50px;
+}
+
+.gallery-list {
+  display: flex;
+}
+
+.gallery-item {
+  margin-right: 30px;
 }
 /* ---------  TEEM---------------- */
 .teem-name {
@@ -181,9 +211,21 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+.teem-list {
+  display: flex;
+}
 
+.teem-item {
+  margin-right: 30px;
+}
+
+.teem-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 /* ----------FOOTEER------- */
 .footer-link-logo {
+  display: inline-block;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -191,6 +233,9 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-top: 60px;
+  margin-left: 215px;
+  margin-bottom: 20px;
 }
 .colortext {
   color: #ffffff;
@@ -211,9 +256,26 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-container {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+}
+
+.footer-list {
+  margin-bottom: 60px;
+}
+
+.footer-item {
+  margin-left: 215px;
+  margin-bottom: 9px;
+}
 
 /* ---------------PORTFOLIO---------- */
 /* --- MENU ---- */
+
+.footer-container {
+}
 
 .menu-button:focus,
 .menu-button:hover {
@@ -233,6 +295,18 @@ ul {
 
 /* --- Portfolio --- */
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 215px;
+  margin-top: 34px;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -246,12 +320,24 @@ ul {
   margin: -1px;
 }
 
+.menu-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.menu-item {
+  margin-right: 8px;
+}
+
 .menu-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  margin-top: 20px;
 }
 .menu-text {
   font-weight: normal;
@@ -259,4 +345,11 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+.menu-button {
+  border-radius: 5px;
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
 }
