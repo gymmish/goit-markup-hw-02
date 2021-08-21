@@ -9,6 +9,30 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
 }
@@ -23,13 +47,50 @@ body {
 }
 
 /* ----------------- HEADER ----------- */
+
+/* .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+} */
+
+.header-logo {
+  margin-right: 95px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .header-link:hover,
 .header-link:focus,
 .header-mail:hover,
@@ -41,11 +102,17 @@ body {
 
 .header-tel,
 .header-mail {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-mail {
+  margin-right: 50px;
 }
 
 .header-btn {
