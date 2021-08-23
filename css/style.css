@@ -267,9 +267,6 @@ ul {
 /* ---------------PORTFOLIO---------- */
 /* --- MENU ---- */
 
-.footer-container {
-}
-
 .menu-button:focus,
 .menu-button:hover {
   background-color: var(--accent-color);
